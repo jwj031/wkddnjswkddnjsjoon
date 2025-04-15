@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D 건축 시뮬레이션</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #btns {
+      position: absolute;
+      top: 10px; left: 10px;
+      z-index: 10;
+      background: rgba(255,255,255,0.8);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="btns">
+    <button onclick="buildWith('wood')">나무</button>
+    <button onclick="buildWith('concrete')">콘크리트</button>
+    <button onclick="buildWith('steel')">강철</button>
+    <button onclick="testStrength()">강도 테스트</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
